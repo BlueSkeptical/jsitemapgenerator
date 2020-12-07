@@ -1,0 +1,10 @@
+cz/jiripinkas/jsitemapgenerator/generator/RssGeneratorTest.class
+cz/jiripinkas/jsitemapgenerator/util/TestUtil.class
+cz/jiripinkas/jsitemapgenerator/generator/SitemapGeneratorTest.class
+cz/jiripinkas/jsitemapgenerator/generator/SitemapPathTest.class
+cz/jiripinkas/jsitemapgenerator/AbstractSitemapGeneratorTest.class
+cz/jiripinkas/jsitemapgenerator/robots/RobotsRuleTest.class
+cz/jiripinkas/jsitemapgenerator/UrlUtilTest.class
+cz/jiripinkas/jsitemapgenerator/generator/SitemapIndexGeneratorTest.class
+cz/jiripinkas/jsitemapgenerator/robots/RobotsTxtGeneratorTest.class
+cz/jiripinkas/jsitemapgenerator/WebPageTest.class
