@@ -28,4 +28,12 @@ public class RobotsRuleTestTempusFugit {
         assertTrue(robotsRule.getDisallows().isEmpty());
     }
 
+    @Test
+    @Concurrent(count = 2)
+	@Repeating(repetition = 100)
+    public void testBuilderMissingUserAgent() {
+        assertThrows(RobotsRuleException.class, () -> {
+            RobotsRule.builder().allowAll().disallowAll().build();
+        });
+    }
 }
