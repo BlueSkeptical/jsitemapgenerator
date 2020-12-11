@@ -77,23 +77,23 @@
 <tr>
 <td nowrap><b>TC 1</b></td>
 <td nowrap>JVM options: [-XX:-TieredCompilation]
-Iterations: 5
-Time: 1000
-Stride: [10, 10000] (capped by NONE)</td>
+Iterations: 1
+Time: 10
+Stride: [10, 8192] (capped by TIME)</td>
 </tr>
 <tr>
 <td nowrap><b>TC 2</b></td>
 <td nowrap>JVM options: [-XX:TieredStopAtLevel=1]
-Iterations: 5
-Time: 1000
-Stride: [10, 10000] (capped by NONE)</td>
+Iterations: 1
+Time: 10
+Stride: [10, 4096] (capped by TIME)</td>
 </tr>
 <tr>
 <td nowrap><b>TC 3</b></td>
 <td nowrap>JVM options: [-Xint]
-Iterations: 5
-Time: 1000
-Stride: [10, 10000] (capped by NONE)</td>
+Iterations: 1
+Time: 10
+Stride: [10, 512] (capped by TIME)</td>
 </tr>
 </table>
 <h3>Observed states</h3>
@@ -108,9 +108,9 @@ Stride: [10, 10000] (capped by NONE)</td>
 </tr>
 <tr>
 <td align='center'>true, true</td>
-<td align='right' width='10.0%' bgColor=#00ff00>70237282</td>
-<td align='right' width='10.0%' bgColor=#00ff00>6620201</td>
-<td align='right' width='10.0%' bgColor=#00ff00>878521</td>
+<td align='right' width='10.0%' bgColor=#00ff00>510916</td>
+<td align='right' width='10.0%' bgColor=#00ff00>131083</td>
+<td align='right' width='10.0%' bgColor=#00ff00>11725</td>
 <td>ACCEPTABLE</td>
 <td>Default outcome.</td>
 </tr>

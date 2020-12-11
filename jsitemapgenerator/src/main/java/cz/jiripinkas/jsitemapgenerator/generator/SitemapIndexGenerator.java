@@ -52,7 +52,7 @@ public class SitemapIndexGenerator extends AbstractSitemapGenerator<SitemapIndex
      * @param webPage WebPage object
      * @return String URL
      */
-    protected String constructUrl(WebPage webPage) {
+    public String constructUrl(WebPage webPage) {
         StringBuilder out = new StringBuilder();
         out.append("<sitemap>\n");
         out.append("<loc>");

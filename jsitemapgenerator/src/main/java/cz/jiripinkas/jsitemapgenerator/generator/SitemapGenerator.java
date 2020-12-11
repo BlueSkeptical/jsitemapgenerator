@@ -94,7 +94,7 @@ public class SitemapGenerator extends AbstractSitemapGenerator<SitemapGenerator>
         return out.toArray(new String[]{});
     }
 
-    protected String constructImage(Image image) {
+    public String constructImage(Image image) {
         StringBuilder out = new StringBuilder();
         out.append("<image:image>\n");
         if (image.getLoc() != null) {

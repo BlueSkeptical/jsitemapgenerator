@@ -77,23 +77,30 @@
 <tr>
 <td nowrap><b>TC 1</b></td>
 <td nowrap>JVM options: [-XX:-TieredCompilation]
-Iterations: 5
-Time: 1000
-Stride: [10, 512] (capped by FOOTPRINT)</td>
+Iterations: 1
+Time: 10
+Stride: [2, 2] (capped by TIME)</td>
 </tr>
 <tr>
 <td nowrap><b>TC 2</b></td>
-<td nowrap>JVM options: [-XX:TieredStopAtLevel=1]
-Iterations: 5
-Time: 1000
-Stride: [10, 512] (capped by FOOTPRINT)</td>
+<td nowrap>JVM options: [-XX:-TieredCompilation]
+Iterations: 1
+Time: 10
+Stride: [4, 4] (capped by TIME)</td>
 </tr>
 <tr>
 <td nowrap><b>TC 3</b></td>
+<td nowrap>JVM options: [-XX:TieredStopAtLevel=1]
+Iterations: 1
+Time: 10
+Stride: [4, 4] (capped by TIME)</td>
+</tr>
+<tr>
+<td nowrap><b>TC 4</b></td>
 <td nowrap>JVM options: [-Xint]
-Iterations: 5
-Time: 1000
-Stride: [10, 256] (capped by TIME)</td>
+Iterations: 1
+Time: 10
+Stride: [2, 2] (capped by TIME)</td>
 </tr>
 </table>
 <h3>Observed states</h3>
@@ -103,19 +110,22 @@ Stride: [10, 256] (capped by TIME)</td>
 <th nowrap>TC 1</th>
 <th nowrap>TC 2</th>
 <th nowrap>TC 3</th>
+<th nowrap>TC 4</th>
 <th>Expectation</th>
 <th>Interpretation</th>
 </tr>
 <tr>
 <td align='center'>true, true</td>
-<td align='right' width='10.0%' bgColor=#00ff00>47230</td>
-<td align='right' width='10.0%' bgColor=#00ff00>22295</td>
-<td align='right' width='10.0%' bgColor=#00ff00>8993</td>
+<td align='right' width='7.5%' bgColor=#00ff00>53</td>
+<td align='right' width='7.5%' bgColor=#00ff00>87</td>
+<td align='right' width='7.5%' bgColor=#00ff00>83</td>
+<td align='right' width='7.5%' bgColor=#00ff00>43</td>
 <td>ACCEPTABLE</td>
 <td>Default outcome.</td>
 </tr>
 <tr>
 <td></td>
+<td align='center' bgColor='green '>OK</td>
 <td align='center' bgColor='green '>OK</td>
 <td align='center' bgColor='green '>OK</td>
 <td align='center' bgColor='green '>OK</td>

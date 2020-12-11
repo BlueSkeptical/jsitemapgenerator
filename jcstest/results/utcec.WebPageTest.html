@@ -22,7 +22,7 @@
  </style>
 </head>
 <body>
-<h1>utcec.RobotsRuleTest</h1>
+<h1>utcec.WebPageTest</h1>
 <h3>Description and references</h3>
 <p>null</p>
 <h3>Environment</h3>
@@ -79,21 +79,21 @@
 <td nowrap>JVM options: [-XX:-TieredCompilation]
 Iterations: 1
 Time: 10
-Stride: [10, 10000] (capped by NONE)</td>
+Stride: [10, 2048] (capped by TIME)</td>
 </tr>
 <tr>
 <td nowrap><b>TC 2</b></td>
 <td nowrap>JVM options: [-XX:TieredStopAtLevel=1]
 Iterations: 1
 Time: 10
-Stride: [10, 10000] (capped by NONE)</td>
+Stride: [10, 1024] (capped by TIME)</td>
 </tr>
 <tr>
 <td nowrap><b>TC 3</b></td>
 <td nowrap>JVM options: [-Xint]
 Iterations: 1
 Time: 10
-Stride: [10, 1024] (capped by TIME)</td>
+Stride: [10, 256] (capped by TIME)</td>
 </tr>
 </table>
 <h3>Observed states</h3>
@@ -108,9 +108,9 @@ Stride: [10, 1024] (capped by TIME)</td>
 </tr>
 <tr>
 <td align='center'>true, true</td>
-<td align='right' width='10.0%' bgColor=#00ff00>662372</td>
-<td align='right' width='10.0%' bgColor=#00ff00>375321</td>
-<td align='right' width='10.0%' bgColor=#00ff00>26109</td>
+<td align='right' width='10.0%' bgColor=#00ff00>91054</td>
+<td align='right' width='10.0%' bgColor=#00ff00>30663</td>
+<td align='right' width='10.0%' bgColor=#00ff00>6213</td>
 <td>ACCEPTABLE</td>
 <td>Default outcome.</td>
 </tr>
